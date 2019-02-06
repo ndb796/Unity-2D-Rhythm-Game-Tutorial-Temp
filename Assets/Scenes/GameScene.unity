@@ -243,6 +243,8 @@ MonoBehaviour:
   - {fileID: 1726084678}
   - {fileID: 268280263}
   - {fileID: 444514898}
+  music: 1
+  autoPerfect: 1
 --- !u!4 &75621225
 Transform:
   m_ObjectHideFlags: 0
@@ -689,7 +691,6 @@ MonoBehaviour:
   - {fileID: 1322904176782312, guid: fe4b5215e100b27419f802fdc8efbf8a, type: 2}
   - {fileID: 1038560571402224, guid: d8ff621ee4974264594f2304e8617309, type: 2}
   - {fileID: 1862702306871190, guid: 2416d1d6faed62645a0365358602f495, type: 2}
-  music: 1
 --- !u!4 &280563238
 Transform:
   m_ObjectHideFlags: 0
