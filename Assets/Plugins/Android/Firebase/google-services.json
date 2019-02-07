@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "1005438588905",
+    "firebase_url": "https://unity-rhythm-game-tutorial.firebaseio.com",
+    "project_id": "unity-rhythm-game-tutorial",
+    "storage_bucket": "unity-rhythm-game-tutorial.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1005438588905:android:7064adf873bdf610",
+        "android_client_info": {
+          "package_name": "com.nadongbin.rhythmtutorial"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1005438588905-1o2rcgqv6in4ludiec25e7h3bnhgcp5g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAqcMEQKXAy798LFbbOPbLdr_QHTZhjqas"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
