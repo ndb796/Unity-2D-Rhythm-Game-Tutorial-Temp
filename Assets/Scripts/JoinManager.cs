@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class JoinManager : MonoBehaviour {
@@ -58,7 +59,7 @@ public class JoinManager : MonoBehaviour {
             task => {
                 if (!task.IsCanceled && !task.IsFaulted)
                 {
-                    messageUI.text = "회원 가입이 완료되었습니다.";
+                    SceneManager.LoadScene("LoginScene");
                 }
                 else
                 {
@@ -66,6 +67,11 @@ public class JoinManager : MonoBehaviour {
                 }
             }
         );
+    }
+
+    public void Back()
+    {
+        SceneManager.LoadScene("LoginScene");
     }
     
 }
