@@ -49,16 +49,26 @@ public class GameSelectManager : MonoBehaviour {
         UpdateSong(musicIndex);
     }
 
-    void Start()
-    {
-        musicIndex = 1;
-        UpdateSong(musicIndex);
-    }
-
     public void GameStart()
     {
         PlayerInformation.selectedMusic = musicIndex.ToString();
         SceneManager.LoadScene("GameScene");
+    }
+    
+    // 회원가입 결과 UI
+    public Text userUI;
+
+    void Start()
+    {
+        userUI.text = PlayerInformation.auth.CurrentUser.Email + "님, 환영합니다.";
+        musicIndex = 1;
+        UpdateSong(musicIndex);
+    }
+
+    public void LogOut()
+    {
+        PlayerInformation.auth.SignOut();
+        SceneManager.LoadScene("LoginScene");
     }
 
 }

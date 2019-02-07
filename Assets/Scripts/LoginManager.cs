@@ -32,6 +32,7 @@ public class LoginManager : MonoBehaviour {
             task => {
                 if (task.IsCompleted && !task.IsCanceled && !task.IsFaulted)
                 {
+                    PlayerInformation.auth = auth;
                     SceneManager.LoadScene("GameSelectScene");
                 }
                 else
