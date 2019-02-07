@@ -245,8 +245,7 @@ MonoBehaviour:
   - {fileID: 1726084678}
   - {fileID: 268280263}
   - {fileID: 444514898}
-  music: 3
-  autoPerfect: 1
+  autoPerfect: 0
 --- !u!4 &75621225
 Transform:
   m_ObjectHideFlags: 0
