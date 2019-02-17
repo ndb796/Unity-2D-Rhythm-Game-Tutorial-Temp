@@ -7,6 +7,7 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using Firebase;
 using Firebase.Unity.Editor;
+using Firebase.Database;
 
 public class GameResultManager : MonoBehaviour {
 
@@ -54,9 +55,7 @@ public class GameResultManager : MonoBehaviour {
         rank1UI.text = "데이터를 불러오는 중입니다.";
         rank2UI.text = "데이터를 불러오는 중입니다.";
         rank3UI.text = "데이터를 불러오는 중입니다.";
-        Firebase.Database.DatabaseReference reference;
-        FirebaseApp.DefaultInstance.SetEditorDatabaseUrl("https://unity-rhythm-game-tutorial.firebaseio.com/");
-        reference = Firebase.Database.FirebaseDatabase.DefaultInstance.GetReference("ranks")
+        DatabaseReference reference = PlayerInformation.GetDatabaseReference().Child("ranks")
             .Child(PlayerInformation.selectedMusic);
         // 데이터 셋의 모든 데이터를 JSON 형태로 가져옵니다.
         reference.OrderByChild("score").GetValueAsync().ContinueWith(task => {
